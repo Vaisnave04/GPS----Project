@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Based toll system📡 - Admin Page</title>
+    <style>
+        #Validate_User, #Fix_Toll_Charges {
+        margin: 20px 0;
+        padding-left: 480px;
+
+        }
+        #Validate_User {
+            height: 300px;
+            width: 300px; 
+        }
+
+        #Fix_Toll_Charges {
+            height: 50px;
+            width: 300px; 
+        }
+        #box_size{
+            width: 300px;       
+            height: 50px;       
+            padding: 10px 20px; 
+            font-size: 20px;   
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+        }
+
+    </style>
+</head>
+<body bgcolor="pink" style="color: black">
+    <center><h1>Administrator Page</h1></center>
+    <table>
+        <tr>
+            <td id="Validate_User"><input type="button" id="box_size" value="Validate User" ></td>
+            <td id="Blacklist_User"><input type="button" id="box_size" value="Blacklist User" ></td>
+        </tr>
+        <tr>
+            <td id="Fix_Toll_Charges"><input type="button" id="box_size" value="Fix Toll Charges" ></td>
+            <td id="Fix_Toll_Area"><input type="button" id="box_size" value="Fix Toll Area" ></td>
+        </tr>
+    </table>
+    <script>
+        document.getElementById('Validate_User').addEventListener('click',function(){
+            window.location.href='Validate.html';
+        })
+        document.getElementById('Blacklist_User').addEventListener('click',function(){
+            window.location.href='Blacklist.html'
+
+        })
+        document.getElementById('Fix_Toll_Charges').addEventListener('click',function(){
+            window.location.href='FixTollCharges.html'
+        })
+        document.getElementById('Fix_Toll_Area').addEventListener('click',function(){
+            window.location.href='FixTollArea.html'
+        })
+    </script>
+
+    
+</body>
+</html>
